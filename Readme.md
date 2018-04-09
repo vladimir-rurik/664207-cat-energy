@@ -42,6 +42,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 ```
 git clone SSH-адрес_вашего_форка
+
 ```
 
 Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
