@@ -1,5 +1,6 @@
 .contacts__info {
   position: relative;
+
   background-color: $grey95;
 
   @media (min-width: $desktops) {
@@ -21,10 +22,12 @@
 
 .contacts__map-wrapper {
   position: relative;
+
   max-width: 100%;
   padding-bottom: 362px;
-  background-color: $grey95;
   overflow: hidden;
+
+  background-color: $grey95;
 
   @media (min-width: $tablets) {
     padding-bottom: 396px;
@@ -39,20 +42,23 @@
   &::before {
     content: "";
     position: absolute;
-    display: block;
     bottom: 170px;
     left: 50%;
+    z-index: 1;
+
+    display: block;
     width: 62px;
     height: 53px;
     margin-left: -31px;
+
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    z-index: 1;
 
     @media (min-width: $tablets) {
       bottom: 144px;
+
       width: 124px;
       height: 106px;
       margin-left: -62px;
@@ -66,12 +72,14 @@
 
 .contacts__map-img {
   position: absolute;
-  display: block;
   bottom: 0;
   left: 50%;
+
+  display: block;
   width: 320px;
-  height: 400px;
   max-width: none;
+  height: 400px;
+
   transform: translateX(-50%);
 
   @media (min-width: $tablets) {
@@ -90,8 +98,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  min-height: 362px;
   z-index: 1;
+
+  min-height: 362px;
 
   @media (min-width: $tablets) {
     min-height: 396px;
@@ -104,10 +113,11 @@
 
 .contacts__layout {
   position: relative;
+  z-index: 2;
+
   display: flex;
   flex-direction: row;
   padding: 27px 0;
-  z-index: 2;
 
   @media (min-width: $tablets) {
     justify-content: space-between;
@@ -116,8 +126,9 @@
 
   @media (min-width: $desktops) {
     width: 570px;
-    padding-left: 75px;
     padding-right: 75px;
+    padding-left: 75px;
+
     background-color: white;
   }
 }
@@ -133,12 +144,13 @@
 
 .contacts__title {
   margin: 0;
-  font-size: 16px;
+
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
   color: $almost-black;
+  text-transform: uppercase;
 
   @media (min-width: $tablets) {
     font-size: 20px;
@@ -151,6 +163,7 @@
 
   @media (min-width: $tablets) {
     width: 170px;
+
     text-align: right;
   }
 
@@ -160,8 +173,8 @@
 }
 
 .contacts__address {
-  font-style: normal;
   line-height: 20px;
+  font-style: normal;
 }
 
 .contacts__city {

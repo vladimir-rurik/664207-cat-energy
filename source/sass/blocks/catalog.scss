@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   padding-top: 1px;
+
   list-style: none;
 
   @media (min-width: $tablets) {
@@ -19,9 +20,10 @@
 }
 
 .catalog__item {
-  padding: 0 20px 24px;
-  border: 1px solid $grey93;
   margin-top: -1px;
+  padding: 0 20px 24px;
+
+  border: 1px solid $grey93;
 
   @media (min-width: $tablets) {
     display: flex;
@@ -30,6 +32,7 @@
     min-height: 513px;
     margin-top: 58px;
     padding: 0;
+
     border: 0;
 
     &:nth-child(1),

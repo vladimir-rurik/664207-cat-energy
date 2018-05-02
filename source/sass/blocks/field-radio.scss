@@ -4,21 +4,25 @@
 
 .field-radio__label {
   position: relative;
+
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 46px;
+
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
   color: $nero;
+  text-transform: uppercase;
+
   user-select: none;
 
   @media (min-width: $tablets) {
     padding-top: 16px;
-    padding-left: 60px;
     padding-bottom: 16px;
+    padding-left: 60px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -30,12 +34,14 @@
   &::before {
     content: "";
     position: absolute;
-    display: block;
     top: 6px;
     left: 0;
+
+    display: block;
     width: 30px;
     height: 30px;
     padding: 8px;
+
     border: 1px solid $grey80;
     border-radius: 50%;
 

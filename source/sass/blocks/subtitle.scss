@@ -1,19 +1,23 @@
 .subtitle {
   position: relative;
+
   display: inline-block;
-  vertical-align: baseline;
   margin: 0;
   padding-right: $phones-paddings;
-  font-size: 24px;
+
   font-weight: 400;
+  font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", "Arial", sans-serif;
+  vertical-align: baseline;
   color: $almost-black;
+
   background-color: $white;
 
   @media (min-width: $tablets) {
     padding-right: 37px;
     padding-left: 37px;
+
     font-size: 36px;
     line-height: 36px;
   }
@@ -27,21 +31,24 @@
 .subtitle::after {
   content: "";
   position: absolute;
-  display: block;
   top: 0;
+  z-index: -1;
+
+  display: block;
   width: 100vw;
   height: 3px;
   margin-top: calc(1em / 2 + 3px);
+
   background-color: $green;
-  z-index: -1;
 }
 
 .subtitle::before {
   display: none;
 
   @media (min-width: $tablets) {
-    display: block;
     right: 100%;
+
+    display: block;
   }
 
   @media (min-width: $desktops) {

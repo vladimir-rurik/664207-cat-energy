@@ -248,57 +248,38 @@
   text-decoration: none;
 
   @media (min-width: $tablets) {
-    padding: 0 57px 0 0;
+    padding: 0 58px 0 0;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 28px;
-
-    display: block;
-
-    transition: 0.3s;
-
-    @media (min-width: $tablets) {
-      top: 8px;
-    }
-  }
-
-  &::before {
-    right: 15.6px;
-
-    width: 17px;
-    height: 2.2px;
-
-    background-color: $grey26;
-  }
-
-  &:hover::before {
-    right: 6.6px;
-
-    width: 26px;
-  }
-
-  &::after {
+    top: 24px;
     right: 9px;
 
-    width: 6.6px;
+    display: block;
+    width: 23px;
     height: 11px;
-    margin-top: -4.4px;
 
-    border-width: 5.5px 6.6px;
-    border-style: solid;
-    border-color: transparent $grey26;
-    border-right: 0;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 32px 11px;
+
+    transition: all 0.3s ease;
+
+    @media (min-width: $tablets) {
+      top: 4px;
+    }
   }
 
   &:hover::after {
     right: 0;
+
+    width: 32px;
   }
 }

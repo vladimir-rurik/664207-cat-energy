@@ -1,10 +1,10 @@
 .lead {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
   color: $almost-black;
+  text-transform: uppercase;
 
   @media (min-width: $tablets) {
     font-size: 20px;

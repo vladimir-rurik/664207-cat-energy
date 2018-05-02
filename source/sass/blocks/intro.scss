@@ -1,24 +1,27 @@
 .intro {
   text-align: center;
   color: $white;
+
   background-color: $green-darker;
   background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 175px;
 
-  @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: linear-gradient(to top, $white 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
     background-size: auto, 320px auto;
   }
 
   @media (min-width: $tablets) {
     position: relative;
+
     min-height: 840px;
     padding-bottom: 533px;
-    color: $almost-black;
-    background: none;
+
     text-align: inherit;
+    color: $almost-black;
+
+    background: none;
   }
 
   @media (min-width: $desktops) {
@@ -29,6 +32,7 @@
 
 .intro__text-block {
   position: relative;
+
   min-height: 166px;
   padding: 27px 0 26px;
 
@@ -41,6 +45,8 @@
   }
 
   @media (min-width: $desktops) {
+    z-index: 1;
+
     padding-top: 110px;
     padding-left: 80px;
   }
@@ -49,6 +55,7 @@
 .intro .intro__title {
   margin: 0;
   margin-bottom: 23px;
+
   color: inherit;
 
   @media (min-width: $tablets) {
@@ -58,29 +65,34 @@
 
 .intro .intro__lead {
   margin: 0;
+
   color: inherit;
 }
 
 .intro__img {
   position: relative;
+
   display: block;
   width: 280px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablets) {
     position: absolute;
-    left: 50%;
     bottom: 0;
+    left: 50%;
+    z-index: -1;
+
     width: 708px;
     height: 609px;
     margin-left: -354px;
-    z-index: -1;
   }
 
   @media (min-width: $desktops) {
     top: 30px;
     bottom: auto;
+    z-index: 0;
+
     width: 552px;
     height: 499px;
     margin-left: -160px;
@@ -91,6 +103,7 @@
   margin-top: 3px;
 
   @media (min-width: $tablets) {
+    width: 516px;
     margin-top: 39px;
     padding-left: 90px;
   }

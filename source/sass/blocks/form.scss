@@ -2,15 +2,15 @@
   padding-bottom: 31px;
 
   @media (min-width: $tablets) {
-    padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 72px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktops) {
-    padding-left: 0;
     padding-right: 0;
     padding-bottom: 82px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktops) {
@@ -23,8 +23,8 @@
 
 .form__text-block {
   margin: 0 0 38px;
-  padding-left: $phones-paddings;
   padding-right: $phones-paddings;
+  padding-left: $phones-paddings;
 
   @media (min-width: $tablets) {
     margin: 0 0 64px;
@@ -42,13 +42,14 @@
 
 .form__block {
   position: relative;
+
   margin-top: 27px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablets) {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktops) {
@@ -65,6 +66,7 @@
 
   &--program {
     position: relative;
+
     margin-top: 23px;
     padding: 16px 20px;
 
@@ -81,20 +83,24 @@
     &::before {
       content: "";
       position: absolute;
-      display: block;
       top: 0;
-      left: 0;
       right: 0;
       bottom: 0;
+      left: 0;
+
+      display: block;
+
       border: 1px solid $grey93;
 
       @media (min-width: $tablets) {
         right: auto;
+
         width: 100vw;
       }
 
       @media (min-width: $desktops) {
         right: 0;
+
         width: auto;
       }
     }
@@ -121,7 +127,7 @@
       margin-top: 66px;
     }
 
-    @media (min-width: $tablets) {
+    @media (min-width: $desktops) {
       margin-top: 69px;
     }
   }
@@ -139,14 +145,13 @@
   margin: 0;
 
   @media (min-width: $tablets) {
-    max-width: auto;
-    margin-left: -40px;
     margin-right: -40px;
+    margin-left: -40px;
   }
 
   @media (min-width: $desktops) {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -219,8 +224,8 @@
 
 .form__submit {
   margin-top: 28px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablets) {
     display: flex;
@@ -228,8 +233,8 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 37px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktops) {
@@ -251,12 +256,14 @@
 .form__submit-note {
   display: block;
   margin-top: 22px;
+
   font-size: 14px;
   line-height: 16px;
   text-align: center;
 
   @media (min-width: $tablets) {
     margin-top: 0;
+
     font-size: 16px;
     line-height: 16px;
     text-align: left;

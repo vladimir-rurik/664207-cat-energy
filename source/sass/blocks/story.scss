@@ -1,15 +1,19 @@
 .story {
   position: relative;
+
   padding-top: 29px;
+
   background-color: $grey95;
 
   @media (min-width: $tablets) {
     padding-top: 43px;
+
     background-color: transparent;
   }
 
   @media (min-width: $desktops) {
     padding-top: 213px;
+
     background-image: linear-gradient(to bottom, $white, $white 213px, $grey95 213px, $grey95);
   }
 }
@@ -30,22 +34,25 @@
   }
 
   @media (min-width: $desktops) {
-    width: 100%;
     position: relative;
-    padding: 78px 0 75px;
+    z-index: 0;
+
+    width: 100%;
     margin-top: -213px;
     margin-bottom: 0;
-    z-index: 0;
+    padding: 78px 0 75px;
 
     &::before {
       content: "";
       position: absolute;
-      display: block;
       top: 0;
-      left: 50%;
       bottom: 0;
-      width: 100vw;
+      left: 50%;
       z-index: -1;
+
+      display: block;
+      width: 100vw;
+
       background-color: $white;
       transform: translateX(-50%);
     }
@@ -69,6 +76,7 @@
 
   @media (min-width: $desktops) {
     position: relative;
+
     width: 450px;
     margin: 0;
     padding-top: 72px;
@@ -77,19 +85,19 @@
 }
 
 .story__toggle {
-  margin-left: -$phones-paddings;
   margin-right: -$phones-paddings;
+  margin-left: -$phones-paddings;
 
   @media (min-width: $tablets) {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktops) {
     width: calc(50% + 80px);
     margin-top: -190px;
-    margin-left: auto;
     margin-right: -$desktops-paddings;
+    margin-left: auto;
   }
 }
 
@@ -121,9 +129,9 @@
   margin-bottom: 10px;
 
   @media (min-width: $tablets) {
+    flex-grow: 1;
     flex-shrink: 0;
     width: 366px;
-    flex-grow: 1;
   }
 
   @media (min-width: $desktops) {
@@ -133,7 +141,9 @@
 
 .story__stats-item {
   width: calc(50% - 16px);
+
   text-align: center;
+
   border-radius: 3px;
 
   @media (min-width: $tablets) {
@@ -143,17 +153,21 @@
 
 .story__stats-value {
   position: relative;
+
   padding: 15px 10px;
+
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
   color: $almost-black;
+  text-transform: uppercase;
+
   border: 1px solid $grey80;
   border-radius: 3px;
 
   @media (min-width: $tablets) {
     padding-bottom: 19px;
+
     font-size: 30px;
     line-height: 36px;
   }
@@ -161,23 +175,27 @@
 
 .story__stats-mark {
   display: inline-block;
-  vertical-align: top;
-  margin-left: 10px;
   margin-right: 10px;
-  padding-left: 15px;
+  margin-left: 10px;
   padding-right: 15px;
+  padding-left: 15px;
+
   font-size: 12px;
   line-height: 12px;
+  vertical-align: top;
+
   background-color: $grey95;
   transform: translateY(-8px);
 
   @media (min-width: $tablets) {
-    margin-left: 7px;
     margin-right: 7px;
-    padding-left: 10px;
+    margin-left: 7px;
     padding-right: 10px;
+    padding-left: 10px;
+
     font-size: 14px;
     line-height: 14px;
+
     background-color: $white;
     transform: translateY(-9px);
   }
@@ -195,6 +213,7 @@
     width: 342px;
     padding-top: 11px;
     padding-left: 42px;
+
     text-align: right;
   }
 
@@ -202,20 +221,23 @@
     width: auto;
     margin-top: 36px;
     padding: 0;
+
     text-align: inherit;
   }
 }
 
 .story__costs {
   margin: 0;
+
   font-size: 14px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
   color: $almost-black;
+  text-transform: uppercase;
 
   @media (min-width: $tablets) {
     margin-left: auto;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -243,6 +265,7 @@
   @media (min-width: $desktops) {
     width: calc(50% - 21px);
     margin-top: 0;
+
     text-align: center;
   }
 }
