@@ -10,37 +10,41 @@
 
 @mixin visually-hidden() {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 @mixin set-paddings () {
-  padding-left: $phones-paddings;
   padding-right: $phones-paddings;
+  padding-left: $phones-paddings;
 
   @media (min-width: $tablets) {
-    padding-left: $tablets-paddings;
     padding-right: $tablets-paddings;
+    padding-left: $tablets-paddings;
   }
 
   @media (min-width: $desktops) {
-    padding-left: $desktops-paddings;
     padding-right: $desktops-paddings;
+    padding-left: $desktops-paddings;
   }
 }
 
 @mixin set-container () {
   @media (min-width: $tablets) {
     max-width: $tablets-max-width;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktops) {

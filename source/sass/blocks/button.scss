@@ -1,15 +1,17 @@
 .button {
   display: inline-block;
-  vertical-align: top;
   width: 100%;
   padding: 10px 22px;
+
   font-size: 16px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
+  vertical-align: top;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
   color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: $green;
   border: 0;
 
@@ -31,11 +33,13 @@
 
 .button--large {
   padding: 11px 22px;
+
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablets) {
     padding: 16px 27px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -43,6 +47,7 @@
 
 .button--info.button {
   color: $grey-dark;
+
   background-color: $grey95;
 
   &:hover,

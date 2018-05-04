@@ -1,15 +1,21 @@
 .page-main {
   max-width: 100%;
   overflow-x: hidden;
+
+  @media (min-width: $desktops) {
+    &--index {
+      padding-top: 80px;
+    }
+  }
 }
 
 .page-main__title-block {
-  padding-top: 27px;
   margin-bottom: 38px;
+  padding-top: 27px;
 
   @media (min-width: $tablets) {
-    padding-top: 58px;
     margin-bottom: 56px;
+    padding-top: 58px;
   }
 
   @media (min-width: $desktops) {
@@ -30,8 +36,8 @@
 }
 
 .page-main__catalog {
-  margin-left: -$phones-paddings;
   margin-right: -$phones-paddings;
+  margin-left: -$phones-paddings;
 
   @media (min-width: $tablets) {
     margin: 0;
@@ -39,8 +45,8 @@
 }
 
 .page-main__form {
-  margin-left: -$phones-paddings;
   margin-right: -$phones-paddings;
+  margin-left: -$phones-paddings;
 
   @media (min-width: $tablets) {
     margin: 0;
